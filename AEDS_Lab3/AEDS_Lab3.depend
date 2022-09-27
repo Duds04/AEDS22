@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1663691022 source:/home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Contabancaria.h"
+
+1663698266 /home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Contabancaria.h
+	"Cliente.h"
+
+1663698286 /home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Cliente.h
+	<stdio.h>
+	<string.h>
+	"Endereco.h"
+
+1663698075 /home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Endereco.h
+
+1663698471 source:/home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Cliente.c
+	<stdio.h>
+	<string.h>
+	"Cliente.h"
+
+1663698257 source:/home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Contabancaria.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"Contabancaria.h"
+
+1663698512 source:/home/mariaeduarda/Documentos/AEDS/AEDS_Lab3/Endereco.c
+	<stdio.h>
+	<string.h>
+	"Endereco.h"
+
