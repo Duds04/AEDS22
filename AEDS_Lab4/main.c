@@ -3,10 +3,11 @@
 #include <string.h>
 
 //#include "Tarefas.h"
-#include "lista_de_tarefas.c"
+#include "lista_de_tarefas.h"
 
 
 int main(){
+    printf("\n\n\n");
     Tarefas t1,t2, t3, t4, t5, t6, t7;
     int data, hora, i;
 

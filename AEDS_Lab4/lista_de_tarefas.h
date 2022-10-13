@@ -1,4 +1,4 @@
-#include "Tarefas.c"
+#include "Tarefas.h"
 #define MaxTam 10000
 
 typedef struct{

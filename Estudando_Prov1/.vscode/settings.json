@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "tadendereco.h": "c",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "type_traits": "cpp",
+        "cmath": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "stdio.h": "c",
+        "listatarefas.h": "c",
+        "celulatarefas.h": "c"
+    }
+}
