@@ -17,23 +17,14 @@ int LEInsereFinal(LETarefas* pLista, Tarefa* item){
     // cria uma nova celula
     pLista->pUltimo->pProx = (pCelulaTarefa)malloc(sizeof(CelulaTarefa));
     // popula a celula
-    pLista->pUltimo->pProx->item = *(item);
-    pLista->pUltimo->pProx->pProx = NULL;
+    pLista->pUltimo = pLista->pUltimo->pProx;
+    pLista->pUltimo->item = *(item);
+    pLista->pUltimo->pProx = NULL;
     return 1;
 }
 
-int LERetiraFinal(LETarefas* pLista){
-    if(LEEhVazia)
-        return 0;
-    pCelulaTarefa pAux;
-    pAux = pLista->pUltimo;
-    pLista->pUltimo = NULL;
-    free(pAux); // desalocando a memoria do que foi retirado
-    return 1;
-}
-
-int LERetiraInicio(LETarefas* pLista){
-    if(LEEhVazia)
+int LERemoveInicio(LETarefas* pLista){
+    if(LEEhVazia(pLista))
         return 0;
     pCelulaTarefa pAux;
     pAux = pLista->pPrimeiro->pProx; //primeiro elemento pós celula cabeça
@@ -43,12 +34,13 @@ int LERetiraInicio(LETarefas* pLista){
 }
 
 int LEImprimeTarefas(LETarefas *pLista){
-    if(LEEhVazia)
+    if(LEEhVazia(pLista))
         return 0;
 
     pCelulaTarefa pAux;
     pAux = pLista->pPrimeiro->pProx; //PEGADO PRIMEIRO ELEMENTO DA LISTA
-    while(pAux!=NULL){
+    printf("\nImprimindo\n");
+    while(pAux != NULL){
         ImprimeTarefa(&(pAux->item));
         pAux = pAux->pProx;
     }

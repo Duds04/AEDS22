@@ -37,13 +37,12 @@ int main()
     printf("É vazia: %d\n", LEEhVazia(pLe1));
     LEInsereFinal(pLe1, &t1);
     LEInsereFinal(pLe1, &t2);
+    // printf("É vazia: %d\n", LEEhVazia(pLe1));
     LEImprimeTarefas(pLe1);
     LEInsereFinal(pLe1, &t3);
     LEInsereFinal(pLe1, &t4);
-    LEImprimeTarefas(pLe1);
     printf("É vazia: %d\n", LEEhVazia(pLe1));
-    LERemoveFinal(pLe1);
-    LImprimeTarefas(pLe1);
+    LEImprimeTarefas(pLe1);
     LERemoveInicio(pLe1);
     LEImprimeTarefas(pLe1);
 
